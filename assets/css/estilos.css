@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+.main-section {
+  background-image: url("../img/img-main.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #eaeaea;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.card .fumar,
+.card .mascotas {
+  color: green;
+  font-weight: bold;
+}
+
+.card .nofumar,
+.card .sinMascotas {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    height: 250px;
+  }
+
+  .cards {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-section {
+    height: 200px;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+a {
+  margin-left: 2rem;
+}
+
+footer {
+margin-top: 2rem;
+
+padding-top: 1rem;
+padding-left: 2rem;
+color: white;
+}
+
+
+
+.containerF {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
